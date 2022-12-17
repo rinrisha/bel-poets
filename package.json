@@ -1,8 +1,8 @@
 {
-  "name": "2lab",
+  "name": "poets",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rinrisha.github.io/Belpoets/",
+  "homepage": "https://rinrisha.github.io/bel-poets/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -15,7 +15,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
     "flag-icon-css": "^4.1.7",
-    "gh-pages": "^4.0.0",
     "i18next": "^22.0.4",
     "i18next-browser-languagedetector": "^7.0.0",
     "i18next-http-backend": "^2.0.0",
@@ -29,12 +28,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -54,7 +53,7 @@
       "last 1 safari version"
     ]
   },
-    "devDependencies": {
+  "devDependencies": {
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^4.0.0"
   }
